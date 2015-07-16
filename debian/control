@@ -1,0 +1,30 @@
+Source: javawriter
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Komal Sukhani <komaldsukhani@gmail.com>
+Build-Depends: debhelper (>= 9), cdbs, default-jdk, maven-debian-helper (>= 1.5)
+Build-Depends-Indep: default-jdk-doc, libmaven-javadoc-plugin-java 
+Standards-Version: 3.9.5
+Vcs-Svn: svn://anonscm.debian.org/pkg-java/trunk/javawriter
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-java/trunk/javawriter
+Homepage: http://github.com/square/javawriter/
+
+Package: libjavawriter-java
+Architecture: all
+Depends: ${misc:Depends}, ${maven:Depends}
+Recommends: ${maven:OptionalDepends}
+Suggests: libjavawriter-java-doc
+Description: JavaWriter
+ A utility class which aids in generating Java source files.
+
+Package: libjavawriter-java-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}, ${maven:DocDepends}
+Recommends: ${maven:DocOptionalDepends}
+Suggests: libjavawriter-java
+Description: Documentation for JavaWriter
+ A utility class which aids in generating Java source files.
+ .
+ This package contains the API documentation of libjavawriter-java.

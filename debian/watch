@@ -1,0 +1,2 @@
+version=3
+  https://github.com/square/javapoet/tags .*/javawriter-(\d\.\d\.\d)\.tar\.(?:bz2|gz|xz)
