@@ -15,7 +15,7 @@ Architecture: all
 Depends: ${misc:Depends}, ${maven:Depends}
 Recommends: ${maven:OptionalDepends}
 Suggests: libjavawriter-java-doc
-Description: JavaWriter
+Description: Java API for generating .java source files
  A utility class which aids in generating Java source files.
 
 Package: libjavawriter-java-doc
@@ -25,6 +25,10 @@ Depends: ${misc:Depends}, ${maven:DocDepends}
 Recommends: ${maven:DocOptionalDepends}
 Suggests: libjavawriter-java
 Description: Documentation for JavaWriter
- A utility class which aids in generating Java source files.
+ Source file generation can be useful when doing things such as
+ annotation processing or interacting with metadata files (e.g., database
+ schemas, protocol formats). By generating code, you eliminate the need
+ to write boilerplate while also keeping a single source of truth for the
+ metadata.
  .
  This package contains the API documentation of libjavawriter-java.
